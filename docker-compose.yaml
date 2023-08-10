@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+ webcolorblue:
+  image: fabricioveronez/web-color:blue
+  ports:
+   - 8081:80
+ webcolorgreen:
+  image: fabricioveronez/web-color:green
+  ports:
+   - 8082:80
+ conversaotemperatura01:
+  image: fabricioveronez/conversao-temperatura:v1
+  ports:
+   - 8083:8080
+ conversaotemperatura02:
+  image: fabricioveronez/conversao-temperatura:v1
+  ports:
+   - 8084:8080
+ conversaotemperatura03:
+  image: fabricioveronez/conversao-temperatura:v1
+  ports:
+   - 8085:8080
