@@ -16,20 +16,19 @@ services:
   
  webcolorblue:
   image: fabricioveronez/web-color:blue
-  ports:
-   - 8081:80
-  networks:
-   - nginx_net
+  # ports:
+  #  - 8081:80
+
  webcolorgreen:
   image: fabricioveronez/web-color:green
   ports:
    - 8082:80
+  networks:
+   - nginx_net
  conversaotemperatura01:
   image: fabricioveronez/conversao-temperatura:v1
   ports:
    - 8083:8080
-  networks:
-   - nginx_net
  conversaotemperatura02:
   image: fabricioveronez/conversao-temperatura:v1
   ports:
